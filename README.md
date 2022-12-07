@@ -1,5 +1,7 @@
 # Project_1_Sand
-Project Week 1
+
+## Project Week 1 
+
 
 # Topic: Data Investigation into the Effect of Weather on Flight Disruption at UK Airports
 
@@ -9,7 +11,6 @@ Project Week 1
         output
         resources
         presentation
-        .gitignore
         analysis.ipynb
         data_prep.ipynb
         README.md
@@ -36,14 +37,8 @@ Project Week 1
             warnings.filterwarnings("ignore")
 
     2. Local dependencies:
-            #Import API key
+            #Import API from "geoapify.py" key which is ignored by gitignore.
             from api_keys import geoapify_key
-
-
-The file, “data_prep.ipynb” needs to be run first to be able to get all the “.csv” files exported and ready for analysis.
-
-When the “analysis.ipynb” file is run, the four “.csv” files will be imported, converted into dataframes and used for the analysis.
-
 
 ### Dataset sources:
 1. Airport Punctuality Data (24 .csv files)
@@ -51,24 +46,28 @@ When the “analysis.ipynb” file is run, the four “.csv” files will be imp
         * Punctuality statistics 2018 (January to December).
         * Punctuality statistics 2019 (January to December).
     * Source:
-        * caa.co.uk
-            * Civil Aviation Authority => Flight punctuality => UK flight punctuality statistics
-
---- ##put reason for two weather sources
+        * [caa.co.uk](https://www.caa.co.uk/)
+            * Civil Aviation Authority => Flight punctuality => [UK flight punctuality statistics](https://www.caa.co.uk/data-and-analysis/uk-aviation-market/flight-punctuality/uk-flight-punctuality-statistics/)
 
 2. Weather 1 Data (4 .txt links)
     * Data Collected:
         * Historic station data of all 4 airports
+            * https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/armaghdata.txt
+            * https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/cardiffdata.txt
+            * https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/paisleydata.txt
+            * https://www.metoffice.gov.uk/pub/data/weather/uk/climate/stationdata/heathrowdata.txt
     * Source:
         * www.metoffice.gov.uk
-            * Climate => UK Climate => Historic station data
+            * Climate => UK Climate => [Historic station data](https://www.metoffice.gov.uk/research/climate/maps-and-data/historic-station-data)
 
 3. Weather 2 Data (Meteostat Python library and API)
     * Data Collected:
         * Nearest Weather station to all 4 airports data
         Grabbed the WMO code which was subsequently used to get the historic weather data for each airport
     * Source:
-        * dev.meteostat.net
+        * [dev.meteostat.net](https://dev.meteostat.net/)
+
+**Two data sources for weather were used as average temperature column in the first data source had a lot of invalid values.**
 
 ### Data cleaning
 1. Merging Airport Punctuality Data:
@@ -93,13 +92,6 @@ When the “analysis.ipynb” file is run, the four “.csv” files will be imp
         * "final_data.to_csv("Resources/converted_to_csv/final_data.csv", index=False, header=True)"
 
 
-
-
-
-
-
-
-
-
-
-
+### Running the Analysis
+1. The file, “data_prep.ipynb” needs to be run first to be able to get all the “.csv” files exported and ready for analysis.
+2. When the “analysis.ipynb” file is run, the four “.csv” files will be imported, converted into dataframes and used for the analysis.
