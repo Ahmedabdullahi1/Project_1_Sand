@@ -105,6 +105,15 @@
 3. Season Extremes have an effect on Flight Cancellations at Selected UK Airports
 4. Season Extremes have an effect on Flight Delays at Selected UK Airports
 
-#### 3 Streams of Data Analysis
-![3 Streams of Data Analysis](images/_3_streams_of_data_analysis.PNG)
+#### Three Streams of Data Analysis
+![3 Streams of Data Analysis](images/_3_streams_of_data_analysis.png)
+
+#### Methodology : 
+Investigate 4 weather variables
+(Av Monthly Rainfall / Wind Speed / Frost Days / Temperature) against  2 Flight Departure Conditions (Cancelled /Average Mins Late)
+
+#### Example : 
+![Example1](output/cancldvrain.png)
+
+
 
