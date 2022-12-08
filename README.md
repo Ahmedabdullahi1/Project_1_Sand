@@ -5,6 +5,7 @@
 
 # Topic: Data Investigation into the Effect of Weather on Flight Disruption at UK Airports
 
+![Flight_Delay_Cancel](images/fancy_flight_delay_cancel.png)
 
 ## File Structure:
     Project_1_Sand
@@ -118,7 +119,7 @@ Investigate 4 weather variables
 
 ![Example_Delay_all4_airports](output/del4in1.png)
 
-![Example_Delay_all4_airports](output/mapplot_delays.png)
+![Example_Delay_all4_airports](images/mapplot_delays.png)
 
 
 
