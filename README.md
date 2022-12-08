@@ -112,9 +112,15 @@
 Investigate 4 weather variables
 (Av Monthly Rainfall / Wind Speed / Frost Days / Temperature) against  2 Flight Departure Conditions (Cancelled /Average Mins Late)
 
-#### Example : 
+#### Examples : 
 ![Example1](output/cancldvrain.png)
-![Example_params](output/cancldvrain_parameters.png)
+![Example_params](images/cancldvrain_parameters.png)
+
+![Example_Delay_all4_airports](output/del4in1.png)
+
+![Example_Delay_all4_airports](output/mapplot_delays.png)
+
+
 
 
 
