@@ -92,6 +92,9 @@
 4. Merging all 3 dataframes:
     * All 3 dataframes were merged into a single dataframe "final_data" and exported as follows:
         * "final_data.to_csv("Resources/converted_to_csv/final_data.csv", index=False, header=True)"
+        
+## Limitations of the Datasets
+The Datasets had a invalid and missingvalues whose entire rows were dropped entirely. Also, to satisfy the hypotheses, a lot of files and links were used from 3 different sources and even though they are trusted sources, the exact true story cannot be told.
 
 ## Analysis
 
