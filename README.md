@@ -123,6 +123,13 @@ Investigate 4 weather variables
 
 ![Example_Delay_all4_airports](images/mapplot_delays.png)
 
+### Credits
+* Dalitso Kapitao
+* Simon Buttler
+* Ahmed Abdullahi
+* Stanley Nyarko Aboagye
+
+
 
 
 
