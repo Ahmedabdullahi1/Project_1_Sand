@@ -6,7 +6,7 @@
 # Topic: Data Investigation into the Effect of Weather on Flight Disruption at UK Airports
 
 
-### File Structure:
+## File Structure:
     Project_1_Sand
         output
         resources
@@ -15,7 +15,7 @@
         data_prep.ipynb
         README.md
 
-### Dependencies:
+## Dependencies:
     1. Modules:
         The following modules were imported
             import re
@@ -41,7 +41,7 @@
             #Import API from "geoapify.py" key which is ignored by gitignore.
             from api_keys import geoapify_key
 
-### Dataset sources:
+## Dataset sources:
 1. Airport Punctuality Data (24 .csv files)
     * Data Collected:
         * Punctuality statistics 2018 (January to December).
@@ -70,7 +70,7 @@
 
 **Two data sources for weather were used as average temperature column in the first data source had a lot of invalid values.**
 
-### Data cleaning
+## Data cleaning
 1. Merging Airport Punctuality Data:
     * All 24 Files were dynamically converted into dataframes, appended into a list and subsequently joined together.
     * The dataframe was exported as follows; 
@@ -93,6 +93,18 @@
         * "final_data.to_csv("Resources/converted_to_csv/final_data.csv", index=False, header=True)"
 
 
+## Analysis
+
 ### Running the Analysis
 1. The file, “data_prep.ipynb” needs to be run first to be able to get all the “.csv” files exported and ready for analysis.
 2. When the “analysis.ipynb” file is run, the four “.csv” files will be imported, converted into dataframes and used for the analysis.
+
+### Hypotheses
+1. Weather Conditions have an effect on Flight Cancellations Across UK Airports
+2. Weather Conditions have an effect on Flight Delays Across UK Airports
+3. Season Extremes have an effect on Flight Cancellations at Selected UK Airports
+4. Season Extremes have an effect on Flight Delays at Selected UK Airports
+
+#### 3 Streams of Data Analysis
+![3 Streams of Data Analysis](images/_3_streams_of_data_analysis.PNG)
+
