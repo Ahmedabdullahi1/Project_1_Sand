@@ -93,7 +93,6 @@
     * All 3 dataframes were merged into a single dataframe "final_data" and exported as follows:
         * "final_data.to_csv("Resources/converted_to_csv/final_data.csv", index=False, header=True)"
 
-
 ## Analysis
 
 ### Running the Analysis
